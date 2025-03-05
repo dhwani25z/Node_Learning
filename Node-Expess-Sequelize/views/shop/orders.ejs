@@ -9,8 +9,17 @@
         <h1>Nothing there</h1>
         <% } else { %>
             <ul>
-                <% order.forEach(order => { %>
-                    <li></li>
+                <% orders.forEach(order => { %>
+                    <li>
+                        <h1>#<%= order.id %></h1>
+                        <ul>
+                            <% order.products.forEach(product => {  %>
+                                <li>
+                                    <%= product.title %> (<%= product.orderItem.quantity %>)
+                                </li>
+                            <% }); %>
+                        </ul>
+                    </li>
                 <% }); %>
             </ul>
         <% } %>

@@ -1,0 +1,16 @@
+// app.use('/', (req,res,next) => {
+//     next();
+// })
+// replace the below code with route in place of app and use it in admin.js
+// app.use('/add-product',(req,res,next) => {
+//     res.send("<form action = '/product' method = 'POST'><input type = 'text' name = 'title'><button type = 'submit'>Add Products</button></form>");
+// })
+// app.post('/product',(req, res, next) => {
+//     console.log(req.body);
+//     res.redirect('/')
+// })
+
+// replace app with router and use it in shop.js
+// app.use('/',(req,res,next) => {
+//     res.send("<h1>Hello from ExpressJs and Middlewares!</h1>");
+// })
